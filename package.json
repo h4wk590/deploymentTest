@@ -1,0 +1,14 @@
+{
+  "name": "ab-code-test",
+  "version": "1.0.0",
+  "description": "Test app for BCDevExchange Code test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aidan Brown",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
