@@ -1,9 +1,5 @@
 # Code Test
 
-## Contents
-
-1. [Deliverables](##Deliverables)
-2. [Deployment](##Deployment)
 
 ## Deliverables
 
@@ -45,3 +41,8 @@ view the app: ```http://40.64.81.25:8080/```.
 
 
 
+### Stage 2 - New Release Plan
+
+- 
+
+Please see the ```releasePlan.txt``` in the ```docs``` directory to view details. 
