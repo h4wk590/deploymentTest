@@ -1,5 +1,10 @@
 # Code Test
 
+## Contents
+
+1. [Deliverables](##Deliverables)
+2. [Deployment](##Deployment)
+
 ## Deliverables
 
 - Deploy an application to a Kubernetes environment.
@@ -28,6 +33,15 @@ The Docker container holds the application files and Node modules in the created
 #### Create AKS cluster
 
 Using az aks cli, I created a two-node cluster. Connected to it with ssh keys (using the ```generate-ssh-keys``` parameters from ```az aks create```) to authenticate to my local kubectl.
+
+
+#### Building the CI Pipeline 
+
+You can find the build and deploy parameters in the ```azure-pipelines.yml```, ```deployment.yml```, and the ```service.yml``` in the manifests directory. 
+
+This is a simple build that automates what I went over previously: On ```git push``` the Continuous Integration is triggered and the build starts with the Dockerfile, pushing it to the Container Registry, then to the Kubernetes Service, the default load balancer gives the application a public ip endpoint to access. All of this is authenticated with Github secret keys. 
+
+view the app: ```http://40.64.81.25:8080/```.
 
 
 
