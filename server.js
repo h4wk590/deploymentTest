@@ -6,7 +6,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello BC DevExchange! \n");
+  res.send("Hello BC DevExchange! Test Test Test \n");
 });
 
 app.listen(PORT, HOST, () => {
