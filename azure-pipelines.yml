@@ -19,7 +19,7 @@ variables:
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
   
-
+# Building the Docker image and pushing it to the ACR
 stages:
 - stage: Build
   displayName: Build stage
