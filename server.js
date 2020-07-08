@@ -6,7 +6,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello BC DevExchange! App is working and public facing! \n");
+  res.send("Hello BC DevExchange from Kubernetes! App is working and public facing! \n");
 });
 
 app.listen(PORT, HOST, () => {

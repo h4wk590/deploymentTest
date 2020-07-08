@@ -1,0 +1,39 @@
+Operational Plan               
+
+For this specific change, if we assume that the live application has major traffic/userbase, 
+it is crucial to take great care of ensuring the final product is tested and the changes do not 
+cause any downtime of the production environment.
+
+I have created a new 'feature' branch, where I will add the changes to. A pull requests will
+trigger the build again, and once the code has been reviewed and has the ok it will build and 
+deploy the new branch.
+
+
+What can be automated?
+
+The pull request itself could trigger scripts to run unit tests against the application, to check
+the validity of the code. This is one way to automate smaller changes that will happen in a sprint.
+
+
+The change management process 
+
+All departments involved with developing to deploying the code should have eyes on the release. This
+means provide documentation on changes, testing thoroughly, having detailed logs, and retention on
+previous releases. 
+
+using a platform/console for not only Developers, but operations, IT, and any other department to 
+be able to see the changes happening. This combined with using agile methodologies are effective ways
+to promote cross-team communication.
+
+
+Security Considerations
+
+ - SSH key-pair access to webserver.
+ - SSL will greatly improve security.
+ - Close all unused ports.
+ - Security Groups (On the cloud service) to limit access to the actual cloud services.
+ - If using open source code/material check for known vulnerabilities.
+ - Utilizing SaaS services like Splunk to test code.
+
+
+

@@ -1,5 +1,8 @@
 # Code Test
 
+View the app: ```http://40.64.81.25:8080/```.
+
+View the pipeline: ```https://dev.azure.com/aidankappa/BC_Code_Test```
 
 ## Deliverables
 
@@ -37,12 +40,7 @@ You can find the build and deploy parameters in the ```azure-pipelines.yml```, `
 
 This is a simple build that automates what I went over previously: On ```git push``` the Continuous Integration is triggered and the build starts with the Dockerfile, pushing it to the Container Registry, then to the Kubernetes Service, the default load balancer gives the application a public ip endpoint to access. All of this is authenticated with Github secret keys. 
 
-view the app: ```http://40.64.81.25:8080/```.
-
-
 
 ### Stage 2 - New Release Plan
-
-- 
 
 Please see the ```releasePlan.txt``` in the ```docs``` directory to view details. 
